@@ -58,7 +58,6 @@ function handleError() {
 const onEntry = entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting && imagesApiService.query !== '') {
-            console.log('WOW')
             fetchImages();
         }
     })
